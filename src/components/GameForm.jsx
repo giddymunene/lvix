@@ -233,7 +233,7 @@ const GameForm = ({ onSubmit, user, onLoginRequest }) => {
         <div className="login-required">
           <div className="login-icon">🎮</div>
           <h3>Login Required</h3>
-          <p>Please login to add new games to LViX</p>
+          <p>Please login to add new games to IVIX</p>
           <button 
             className="login-button"
             onClick={onLoginRequest}
