@@ -117,3 +117,32 @@
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 180, 219, 0.3);
   }
+
+  /* Add to existing Header.css */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .welcome-text {
+    color: #b0b0b0;
+  }
+  
+  .welcome-text strong {
+    color: white;
+  }
+  
+  .logout-button {
+    background: transparent;
+    border: 2px solid #f44336;
+    color: #f44336;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background: rgba(244, 67, 54, 0.1);
+  }

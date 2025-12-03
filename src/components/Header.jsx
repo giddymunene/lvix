@@ -1,12 +1,19 @@
 import React from 'react';
 import './Header.css';
 
-const Header = ({ onSearch, onLogoClick }) => {
+const Header = ({ 
+  onSearch, 
+  onLogoClick, 
+  user, 
+  onLoginClick, 
+  onSignupClick, 
+  onLogoutClick 
+}) => {
   return (
     <header className="header">
       <div className="header-content">
         <div className="logo" onClick={onLogoClick}>
-          <h1 className="logo-text">LViX</h1>
+          <h1 className="logo-text">IViX</h1>
           <span className="logo-subtitle">Game Ratings</span>
         </div>
         
@@ -23,8 +30,34 @@ const Header = ({ onSearch, onLogoClick }) => {
         </div>
         
         <div className="user-section">
-          <button className="login-button">Login</button>
-          <button className="signup-button">Sign Up</button>
+          {user ? (
+            <div className="user-info">
+              <span className="welcome-text">
+                Welcome, <strong>{user.username}</strong>!
+              </span>
+              <button 
+                className="logout-button"
+                onClick={onLogoutClick}
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <>
+              <button 
+                className="login-button"
+                onClick={onLoginClick}
+              >
+                Login
+              </button>
+              <button 
+                className="signup-button"
+                onClick={onSignupClick}
+              >
+                Sign Up
+              </button>
+            </>
+          )}
         </div>
       </div>
     </header>

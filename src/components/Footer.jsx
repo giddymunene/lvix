@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3 className="footer-logo">LViX</h3>
+          <h3 className="footer-logo">IVIX</h3>
           <p className="footer-description">
             The ultimate platform for game enthusiasts to rate, review, and discover amazing games.
           </p>
@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} LViX Game Ratings. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} IVIX Game Ratings. All rights reserved.</p>
       </div>
     </footer>
   );
