@@ -258,7 +258,7 @@ const GameForm = ({ onSubmit, user, onLoginRequest }) => {
       <div className="form-header">
         <h2 className="form-title">Add New Game</h2>
         <p className="form-subtitle">
-          Share your favorite games with the LViX community
+          Share your favorite games with the IVIX community
           <span className="user-badge">Logged in as: {user.username}</span>
         </p>
       </div>
